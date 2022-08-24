@@ -1,0 +1,175 @@
+.App{
+  height: 100vh;
+  display: flex;
+  
+  background-color: #020230;
+  color: white;
+}
+.Main{
+  width: 75%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0),#020230), url("./asset/bg.jpg") center;
+}
+.Pyramid{
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.priceList{
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+}
+.priceItem{
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  
+}
+.queNumber{
+  font-size: 8px;
+  width: 40%;
+}
+.amout{
+  font-size: 12px;
+}
+.active{
+  background-color: darkgreen;
+}
+.Main{
+  display: flex;
+  flex-direction: column;
+  
+}
+.top{
+  height:60%;
+  position: relative;
+  
+}
+.timer
+{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 50px;
+  left: 25px;
+  color: aliceblue;
+}
+.bottom{
+  height: 40%;
+}
+.que{
+  background:linear-gradient(#020230, #000);
+  border: 1px solid white;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.ans{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top: 20px;
+ 
+}
+.option{
+  background-color: #020230;
+  font-size: 14px;
+  border: 1px solid rgb(82, 73, 73);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  
+}
+.option.active{
+  background-color: mediumblue;
+}
+.option:hover,
+.option.active{
+  background-color: mediumblue;
+  border: 1px solid rgb(142, 117, 117);
+}
+.option.correct{
+  animation: correct 3s ease forwards;
+}
+@keyframes correct{
+  0%,22%,42%
+  {
+    background-color: rgb(17, 17, 18);
+  }
+  20%,40%,60%{
+    background-color:rgb(62, 186, 224);
+  }
+  62%,100%{
+    background-color: forestgreen;
+  }
+}
+.option.wrong{
+  animation: wrong 3s ease forwards;
+}
+@keyframes wrong{
+  0%,22%,42%
+  {
+    background-color: rgb(17, 17, 18);
+  }
+  20%,40%,60%{
+    background-color:rgb(62, 186, 224);
+  }
+  62%,100%{
+    background-color: rgb(229, 42, 48);
+  }
+}
+.stop{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: rgb(30, 227, 40);
+
+
+}
+.form{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  border: none;
+  font-size: 15px;
+  margin: 15px;
+  border-radius: 5px;
+
+}
+.submit{
+  border-radius: 5px;
+  background: #13137e;
+  color: white;
+  border: 0.5px solid white;
+}
+.win{
+  display: flex;
+  align-items: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+background-color: #020230;
+color: bisque;
+}
